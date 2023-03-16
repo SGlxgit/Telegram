@@ -446,10 +446,6 @@ public class ReactedUsersListView extends FrameLayout {
         }
 
         void setUserReaction(TLRPC.MessagePeerReaction reaction) {
-            if (reaction == null) {
-                return;
-            }
-
             TLRPC.User u = MessagesController.getInstance(currentAccount).getUser(MessageObject.getPeerId(reaction.peer_id));
             if (u == null) {
                 return;

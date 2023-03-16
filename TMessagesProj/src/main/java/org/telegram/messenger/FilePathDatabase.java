@@ -210,7 +210,7 @@ public class FilePathDatabase {
         }
     }
 
-    public void ensureDatabaseCreated() {
+    private void ensureDatabaseCreated() {
         if (!databaseCreated) {
             if (!NativeLoader.loaded()) {
                 int tryCount = 0;

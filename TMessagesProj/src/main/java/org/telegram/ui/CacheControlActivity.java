@@ -452,7 +452,6 @@ public class CacheControlActivity extends BaseFragment implements NotificationCe
 
     private void loadDialogEntities() {
         getFileLoader().getFileDatabase().getQueue().postRunnable(() -> {
-            getFileLoader().getFileDatabase().ensureDatabaseCreated();
             CacheModel cacheModel = new CacheModel(false);
             LongSparseArray<DialogFileEntities> dilogsFilesEntities = new LongSparseArray<>();
 

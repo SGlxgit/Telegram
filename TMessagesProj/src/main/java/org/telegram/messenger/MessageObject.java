@@ -6656,7 +6656,7 @@ public class MessageObject {
     }
 
     public boolean isMusic() {
-        return isMusicMessage(messageOwner) && !isVideo() && !isRoundVideo();
+        return isMusicMessage(messageOwner) && !isVideo();
     }
 
     public boolean isDocument() {
